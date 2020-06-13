@@ -10,3 +10,4 @@ def all():
 	return render_template('home.html',data=quote,l=len(quote))
 if __name__ == '__main__':
 	app.run()
+   
