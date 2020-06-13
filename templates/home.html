@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport",width="device-width,intial-scale=1.0">
+	
+	<title>Quotes</title>
+	<style type="text/css">
+		body{
+			text-align:center;
+			background:#170e0e;
+		}
+		h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#e32968, #161616);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+		span.txt {
+    font-family:-webkit-pictograph;
+    font-size:20px;
+    color:white;
+    background:#e91e635e;
+    font-weight:bold;
+    border-radius: 5px;
+    box-shadow:2px 4px 5px #dbcfcf;
+}
+.name{
+	color: white;
+}
+.content{
+	background-image:url();
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+	
+   background:#131514;
+   border: 20px solid;
+  border-image-source: linear-gradient(45deg, yellow,red,pink);
+  border-image-slice: 1;
+
+}
+img{
+	border-radius: 50px;
+
+}
+h1{
+  
+}
+
+	</style>
+
+</head>
+<body>
+	
+	<h1>Quotes</h1>
+	<div class="content">
+	{%for i in range(l)%}
+
+<span class="txt">"{{data[i]['text']}}"</span><br>
+<span class="name">~{{data[i]['author']}}</span><br>
+<br>
+
+    {%endfor%}
+	</div>
+
+</body>
+</html>
